@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="style.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: white;
+    background-image: url("picc.png");
+    /* url("myp.png") */
+    /* background-repeat: no-repeat; */
+    background-position: right, left;
+    /* background-image: url(bws.png) */
+}
+
+.header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+/* .header h2 {
+    text-align: center;
+} */
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: white;
+    color:maroon;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+    padding-block-start: 200%;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 15px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Ranya Abedelmalik | رانيا رفعت  عبد الملك </h1>
+  <p> QUOTE GOES HERE</p>
+</div>
+<div class="topnav">
+  <a href="about.html">About Me</a>
+  <a href="leadership.html">Leadership</a>
+  <a href="interest.html">Interests</a>
+  <a href="extra.html">Extra Curricular</a>
+  <a href="contact.html" style="float: right">Contact Info</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <img src="bws.png" alt="Avatar" 
+    style="width:180px" height="155px" style="display: block" style= "margin-right:15px" style="float: left">
+        <p>Ranya is currently a junior at Shortridge High School. She has a deep passion for advocacy as well as business and technology. Her goal is to merge her leadership skills as well as her interests in technology, business, and community development to fully harness the great potential of the city of Indianapolis. 
+        </p>
+        <h2>About Ranya</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <p>Ranya is currently a junior at Shortridge High School. She has a deep passion for advocacy as well as business and technology. Her goal is to merge her leadership skills as well as her interests in technology, business, and community development to fully harness the great potential of the city of Indianapolis. 
+        </p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px";>Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <div class="fakeimg" style="height:200px;">Image</div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Most Recent Accomplishment</h2>
+      <p>Mayors Youth Leadership Council 2018</p>
+      <img src= off.png style="height:400px;">Some text about the mafnelfeuow</div>
+      <p> </p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Ranya Abedelmalik</h2>
+  <p>Follow Me</p>
+</div>
+
+</body>
+</html>
+
