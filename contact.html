@@ -7,6 +7,7 @@
         font-family: Arial;
         padding: 10px;
         background: #f1f1f1;
+        background: linear-gradient(#f1f1f1, #85144b);
     }
 
     /* Header/Blog Title */
@@ -60,14 +61,14 @@
 <body>
 <div class="header">
   <h1>Ranya Abedelmalik | رانيا رفعت  عبد الملك </h1>
-  <p> QUOTE GOES HERE</p>
 </div>
 <div class="topnav">
-  <a href="about.html">About Me</a>
-  <a href="leadership.html">Leadership</a>
-  <a href="interest.html">Interests</a>
-  <a href="extra.html">Extra Curricular</a>
-  <a href="contact.html" style="float: right">Contact Info</a>
+        <a href="index.html">About Me</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="interest.html">Interests</a>
+        <a href="extra.html">Extra Curricular</a>
+        <a href="contact.html" style="float: right">Contact</a>
+        <a href="games.html">Projects</a>
 </div>
 
 <!DOCTYPE html>
@@ -99,6 +100,15 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 15px;
 }
 
 input[type=submit]:hover {
@@ -136,22 +146,162 @@ input[type=submit]:hover {
 }
 </style>
 </head>
+
+
+
+        <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    float: right;
+}
+
+.contact {
+    width: 50%;
+
+}
+</style>
+</head>
 <body>
 
+<h3>Send me a message!</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+    <label for="rela">Relationship with Ranya</label>
+    <select id="country" name="country">
+      <option value="fam">Family Member</option>
+      <option value="friend">Friend</option>
+      <option value="Mentor">Mentor</option>
+      <option value="usa">Nothing.... yet</option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" >
+  </form>
+</div>
+<!-- <div class="contact">
+    <h2>Email Me</h2>
+    <p> @abedelmalik.ranya@gmail.com</p>   
+    <h2>Phone Number</h2>
+    <p>@ (317) 667- 9086</p>
+    <h2>GitHub </h2>
+    <p> @ https://github.com/RanyaAbedelmalik
+    <h2>Instagram </h2>
+    <p> @ Raaaaaanya_</p>
+    <h2>Snapchat</h2>
+    <p>@ ItsRanya</p>
+    <h2>Twitter</h2>
+    <p>@ RAbedelmalik</p>
+</div> -->
 
 </body>
-</html>
 
-    <h1> Ranya's Contact Info</h1>
-    <h2>Email</h2>
-        <p> @ abedelmalik.ranya@gmail.com</p>
-    <h2>Phone Number</h2>
-        <p>@ (317) 667- 9086</p>
-    <h2>GitHub </h2>
-        <p> @ https://github.com/RanyaAbedelmalik
-    <h2>Instagram </h2>
-        <p> @ Raaaaaanya_</p>
-    <h2>Snapchat</h2>
-        <p>@ ItsRanya</p>
-    <h2>Twitter</h2>
-        <p>@ RAbedelmalik</p>
+
+<div class="footer">
+        <div> </div>
+        <div class= ".footer"
+            style="margin-top: 0px"
+          <p>Follow Me</p>
+          <html>
+          <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <style>
+        
+         .fa {
+          padding: 20px;
+          font-size: 55px;
+          width: 100px;
+          height: 100px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+          
+          .fa:hover {
+              opacity: 0.7;
+          }
+        
+          
+          .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+          
+          .fa-google {
+            background: #dd4b39;
+            color: white;
+          }
+          
+          .fa-linkedin {
+            background: #007bb5;
+            color: white;
+          }
+         
+          
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+    
+          .github{
+              color: white;
+          }
+        
+          </style>
+          </head>
+          <body>
+        
+          <a href="https://twitter.com/RAbedelmalik" class="fa fa-twitter"></a>
+          <a href="https://plus.google.com/u/0/111148461809131211266" class="fa fa-google"></a>
+          <a href="https://www.linkedin.com/in/ranya-abedelmalik-894225168/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/raaaaaanya_/?hl=en" class="fa fa-instagram"></a> 
+        
+        
+                
+          </body>
+</html>
