@@ -2,65 +2,123 @@
 <html>
 <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="portfolio.js">
 <style>
-    body {
-        font-family: Arial;
-        padding: 10px;
-        background: #f1f1f1;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color:white;
+    background-image: url("picc.png");
+    /* url("myp.png") */
+    /* background-repeat: no-repeat; */
+    background-position: right, left;
+    /* background-image: url(bws.png) */
+}
+
+.header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+/* .header h2 {
+    text-align: center;
+} */
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: white;
+    color:black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+    background-color:#85144b;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+    padding-block-start: 200%;
+}
+
+.picture {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 15px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
     }
+}
 
-    /* Header/Blog Title */
-
-    .header {
-        padding: 60px;
-        text-align: center;
-        background-color: white;
-        background-image: url("picc.png");
-        /* url("myp.png") */
-        /* background-repeat: no-repeat; */
-        background-position: right, left;
-        /* background-image: url(bws.png) */
-    }
-
-    .header h1 {
-        font-size: 40px;
-        color: white;
-    }
-
-    /* .header h2 {
-            text-align: center;
-        } */
-
-    /* Style the top navigation bar */
-
-    .topnav {
-        overflow: hidden;
-        background-color: black;
-    }
-
-    /* Style the topnav links */
-
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
     .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+        float: none;
+        width: 100%;
     }
-
-    /* Change color on hover */
-
-    .topnav a:hover {
-        background-color: white;
-        color: maroon;
 }
 </style>
 </head>
 <body>
 <div class="header">
   <h1>Ranya Abedelmalik | رانيا رفعت  عبد الملك </h1>
-  <p> QUOTE GOES HERE</p>
 </div>
 <div class="topnav">
   <a href="about.html">About Me</a>
@@ -69,4 +127,315 @@
   <a href="extra.html">Extra Curricular</a>
   <a href="contact.html" style="float: right">Contact Info</a>
 </div>
-<p>STUFF ABOUT ME GOES HERE </p> 
+
+
+
+
+<div2 class="row">
+  <div class="leftcolumn">
+    <div class="card">
+            <img src="CIRCLE.png" 
+            width= "240" 
+            height="225"
+            alt= "avatar"
+            align="left"
+            style= "margin-right: 10px" />
+            <h2>About Ranya</h2>
+            <p>Ranya is currently a junior at Shortridge High School. She has a deep passion for advocacy as well as business and technology. Her goal is to merge her leadership skills as well as her interests in technology, business, and community development to fully harness the great potential of the city of Indianapolis. 
+                Her post highschool plans include attending the Wharton School of UPenn.
+              Her interests include music and traveling. She loves learning about new cultures and languages. She speaks English, Arabic, and Spanish, she is seeking to one day learn French and Mandarin. </p> 
+              
+
+
+</div>
+    <div class="card">
+      <h2>Nextech Catapult Program</h2>
+      <h5> Summer 2018</h5>
+    
+
+<style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="slide show/slide 2.png" style="width:90%"; height="500px">
+  <div class="text">The heat can't stop us!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="slide show/slide 4.jpeg" style="width:90%"; height="500px">
+  <div class="text">Visit to Kronos!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="slide show/slide 5.jpeg" style="width:90%"; height="500px">
+  <div class="text">Eli Lilly</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="slide show/slide 6.jpeg" style="width:90%"; height="500px">
+    <div class="text">Our visit to Eli Lilly</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="slide show/slide 7.jpeg" style="width:90%"; height="500px">
+    <div class="text">Riding Bikes on the Canal</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="slide show/slide 8.png" style="width:90%"; height="500px">
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2200); // Change image every 2 seconds
+}
+</script>
+</style>
+
+
+
+
+
+
+
+
+
+
+      <p>The Nextech Catapult program contains a 6-week summer internship that enhances the knowledge of computer science skills as well as technical and workplace skills. The Catapult program allowed me to fully get a feel of how companies functions and how many different jobs each company has to offer. The program not only helped me build professional connections but friendships with teenagers who are interested in the same things as me. 
+    </p>
+      
+
+    </div>
+
+
+
+<!-- 
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="IMG_6451.PNG" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="slide 2.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+ -->
+
+
+</div>
+
+<div class="rightcolumn">
+        <div class="card">
+          <h2>Most Recent Accomplishment</h2>
+          <p>Mayors Youth Leadership Council 2018-2019</p>
+          <img src= off.png style="height:400px; margin-bottom: 10px">
+          The voice of the youth is the most important voice. Because of the Mayors Youth Leadership Council, Mayor Joe Hogsett proclaimed June 22nd as Youth Leadership Day. Being a part of this council means a lot to me because I am a firm believer that the voice of the youth can create positive change and a tremendous influence. 
+        </div>
+          <p> </p>
+        </div>
+
+        <!-- <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg"><p>Image</p></div>
+          <div class="fakeimg"><p>Image</p></div>
+          <div class="fakeimg"><p>Image</p></div>
+        </div>
+     -->
+
+
+<!-- <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div> -->
+
+<div class="footer">
+<div> </div>
+<div class= ".footer"
+    style="margin-top: 0px"
+  <p>Follow Me</p>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+ .fa {
+  padding: 20px;
+  font-size: 26.5px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+ 
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+ 
+
+  </style>
+  </head>
+  <body>
+
+  <a href="https://twitter.com/RAbedelmalik" class="fa fa-twitter"></a>
+  <a href="https://plus.google.com/u/0/111148461809131211266" class="fa fa-google"></a>
+  <a href="https://www.linkedin.com/in/ranya-abedelmalik-894225168/" class="fa fa-linkedin"></a>
+  <a href="https://www.instagram.com/raaaaaanya_/?hl=en" class="fa fa-instagram"></a>
+
+
+        
+  </body>
+  </html> 

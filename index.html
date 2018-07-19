@@ -2,6 +2,7 @@
 <html>
 <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="portfolio.js">
 <style>
 * {
     box-sizing: border-box;
@@ -11,13 +12,14 @@ body {
     font-family: Arial;
     padding: 10px;
     background: #f1f1f1;
+    /* background: linear-gradient(#f1f1f1, #85144b); */
 }
 
 /* Header/Blog Title */
 .header {
     padding: 60px;
     text-align: center;
-    background-color: white;
+    background-color:white;
     background-image: url("picc.png");
     /* url("myp.png") */
     /* background-repeat: no-repeat; */
@@ -53,7 +55,7 @@ body {
 /* Change color on hover */
 .topnav a:hover {
     background-color: white;
-    color:maroon;
+    color:black;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -61,6 +63,7 @@ body {
 .leftcolumn {   
     float: left;
     width: 75%;
+    background-color: #85144b;
 }
 
 /* Right column */
@@ -70,6 +73,7 @@ body {
     background-color: #f1f1f1;
     padding-left: 10px;
     padding-block-start: 200%;
+    /* background: linear-gradient( #85144b, #f1f1f1) */
 }
 
 /* Fake image */
@@ -122,61 +126,278 @@ body {
 <body>
 <div class="header">
   <h1>Ranya Abedelmalik | رانيا رفعت  عبد الملك </h1>
-  <p> QUOTE GOES HERE</p>
+  <p> </p>
 </div>
 <div class="topnav">
-  <a href="about.html">About Me</a>
+  <a href="index.html">About Me</a>
   <a href="leadership.html">Leadership</a>
   <a href="interest.html">Interests</a>
   <a href="extra.html">Extra Curricular</a>
   <a href="contact.html" style="float: right">Contact Info</a>
+  <a href="games.html">Projects</a>
+
 </div>
-<div class="row">
+
+
+
+
+<div2 class="row">
   <div class="leftcolumn">
     <div class="card">
-        <img src="bws.png" alt="Avatar" 
-    style="width:180px" height="155px" style="display: block" style= "margin-right:15px" style="float: left">
-        <p>Ranya is currently a junior at Shortridge High School. She has a deep passion for advocacy as well as business and technology. Her goal is to merge her leadership skills as well as her interests in technology, business, and community development to fully harness the great potential of the city of Indianapolis. 
-        </p>
-        <h2>About Ranya</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <p>Ranya is currently a junior at Shortridge High School. She has a deep passion for advocacy as well as business and technology. Her goal is to merge her leadership skills as well as her interests in technology, business, and community development to fully harness the great potential of the city of Indianapolis. 
-        </p>
-    </div>
+            <img src="CIRCLE.png" 
+            width= "240" 
+            height="225"
+            alt= "avatar"
+            align="left"
+            style= "margin-right: 10px" />
+            <h2>About Ranya</h2>
+            <p>Ranya is currently a junior at Shortridge High School. She has a deep passion for advocacy as well as business and technology. Her goal is to merge her leadership skills as well as her interests in technology, business, and community development to fully harness the great potential of the city of Indianapolis. 
+                    Her post highschool plans include attending the Wharton School of UPenn.
+                  Her interests include music and traveling. She loves learning about new cultures and languages. She speaks English, Arabic, and Spanish, she is seeking to one day learn French and Mandarin. </p> 
+
+
+
+</div>
     <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px";>Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <div class="fakeimg" style="height:200px;">Image</div>
-    </div>
+      <h2>Nextech Catapult Program</h2>
+      <h5> Summer 2018</h5>
+    
+
+<style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="slide show/slide 2.png" style="width:90%"; height="500px">
+  <div class="text">The heat can't stop us!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="slide show/slide 4.jpeg" style="width:90%"; height="500px">
+  <div class="text">Visit to Kronos!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="slide show/slide 5.jpeg" style="width:90%"; height="500px">
+  <div class="text">Eli Lilly</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="slide show/slide 6.jpeg" style="width:90%"; height="500px">
+    <div class="text">Our visit to Eli Lilly</div>
   </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>Most Recent Accomplishment</h2>
-      <p>Mayors Youth Leadership Council 2018</p>
-      <img src= off.png style="height:400px;">Some text about the mafnelfeuow</div>
-      <p> </p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="slide show/slide 7.jpeg" style="width:90%"; height="500px">
+    <div class="text">Riding Bikes on the Canal</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="slide show/slide 8.png" style="width:90%"; height="500px">
   </div>
 </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2200); // Change image every 2 seconds
+}
+</script>
+</style>
+
+
+
+
+
+
+
+
+
+
+      <p>The Nextech Catapult program contains a 6-week summer internship that enhances the knowledge of computer science skills as well as technical and workplace skills. The Catapult program allowed me to fully get a feel of how companies functions and how many different jobs each company has to offer. The program not only helped me build professional connections but friendships with teenagers who are interested in the same things as me. 
+    </p>
+      
+
+    </div>
+
+
+
+</div>
+
+<div class="rightcolumn">
+        <div class="card">
+          <h2>Most Recent Accomplishment</h2>
+          <p>Mayors Youth Leadership Council 2018-2019</p>
+          <img src= off.png style="height:400px; margin-bottom: 10px">
+          The voice of the youth is the most important voice. Because of the Mayors Youth Leadership Council, Mayor Joe Hogsett proclaimed June 22nd as Youth Leadership Day. Being a part of this council means a lot to me because I am a firm believer that the voice of the youth can create positive change and a tremendous influence. 
+        </div>
+          <p> </p>
+        </div>
+
 
 <div class="footer">
-  <h2>Ranya Abedelmalik</h2>
+<div> </div>
+<div class= ".footer"
+    style="margin-top: 0px"
   <p>Follow Me</p>
-</div>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
 
-</body>
-</html>
+ .fa {
+  padding: 20px;
+  font-size: 26.5px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
 
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+ 
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+ 
+
+  </style>
+  </head>
+  <body>
+
+  <a href="https://twitter.com/RAbedelmalik" class="fa fa-twitter"></a>
+  <a href="https://plus.google.com/u/0/111148461809131211266" class="fa fa-google"></a>
+  <a href="https://www.linkedin.com/in/ranya-abedelmalik-894225168/" class="fa fa-linkedin"></a>
+  <a href="https://www.instagram.com/raaaaaanya_/?hl=en" class="fa fa-instagram"></a>
+
+
+
+        
+  </body>
+  </html> 
