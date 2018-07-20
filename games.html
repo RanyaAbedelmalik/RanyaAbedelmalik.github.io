@@ -121,9 +121,10 @@ h6 {
     font-size: 18px;
 }
 
-h2{
+
+/* h2{
     text-decoration: underline;
-}
+} */
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
@@ -206,12 +207,82 @@ h2{
 
             <script src="tictactoe.js" type="text/javascript"></script>
 
-        </body>
-
-        <body>
     
-                <h2>3. Ranya's Connect Four :)</h2>
-                <p class="info"></p>
+    <head>
+        <title>An interactive web page</title>
+        <style>
+            #color_box {width: 200px; height: 200px;}
+            .gray {background: gray;}
+            .blue {background: rgb(67, 111, 255);}
+            .pink {background: pink;}
+        </style>
+    </head>
+    
+        <h1> Basic Javascript</h1>
+
+        <h2>Color Changer</h2>
+        <button id="gray_button">Gray</button>
+        <button id="blue_button">Blue</button>
+        <button id="pink_button">Pink</button>
+        <div id="color_box" class="gray"></div>        
+        <script>
+            const gray_button = document.getElementById("gray_button");
+            const blue_button = document.getElementById("blue_button");
+            const pink_button = document.getElementById("pink_button");
+            const color_box = document.getElementById("color_box");
+            gray_button.onclick = function() {
+                color_box.className = "gray";
+            };
+            blue_button.onclick = function () {
+                color_box.className = "blue";
+            }
+            pink_button.onclick = function() {
+                color_box.className = "pink";
+            }
+            
+        </script>
+
+        <hr>
+
+        <h2>Counter</h2>
+        <button id="counter_button">This fabulous button</button>
+        has been clicked <span id="countspan">0</span> times.
+        <script>
+            var count=0;
+            const counter_button = document.getElementById("counter_button");
+            const countspan = document.getElementById("countspan");
+            counter_button.onclick = function() {
+            
+                 
+                 count++; 
+                 countspan.textContent = count;
+            }
+        </script>
+
+        <hr>
+
+        <h2>Even or Odd?</h2>
+        <button id="even_or_odd_button">Is the count even or odd?</button>
+        <script>
+            const even_or_odd_button = document.getElementById("even_or_odd_button");
+            even_or_odd_button.onclick = function() {
+                /* TODO 3
+                 *
+                 * Fill in this function so that it shows an
+                 * alert dialog stating whether the count
+                 * (from part 2, above) is even or odd.
+                 */
+                 if (count % 2 === 0) {
+                     alert("Even!")
+                 } else {
+                     alert("Odd!")
+                 }
+            }
+        </script>
+    
+    <h2>3. Ranya's Connect Four :)</h2>
+        <div class="contact4">
+                <div class="info"></div>
                 <div id="game-base">
                     <div id="game-table">
             
@@ -239,5 +310,15 @@ h2{
             
                 </div>
                 <script src="connect4.js" type="text/javascript "></script>
-            </body>
+          
+                <div class= "containter">
+                    <div class= "row">
+                        <div class= "col-lg-12" style="text-align: center">
+                            <p>Copyright © RANYA ABEDELMALIK 2018 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+                
+         </body>
       
